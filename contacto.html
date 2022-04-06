@@ -23,9 +23,6 @@
             width: 80px;
         }
     </style>
-    <script src="./javascript/gral.js">
-        
-    </script>
 </head>
 <body>
     <body background="imagenes/fnd1.gif">
@@ -51,11 +48,11 @@
         <form action="contacto.html" method="get">
     <label for="nombre">
         NOMBRE_
-        <input type="nombre" name="nombre" id="nombre" class="camposFormularios campoEnRojo">
+        <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo" onblur="validateFormContacto()">
     </label>
     <label for="apellido">
         APELLIDO_
-        <input type="apellido" name="apellido" id="apellido" class="camposFormularios campoEnRojo">
+        <input type="apellido" name="apellido" id="apellido" class="camposFormularios campoEnRojo" onlubr="validateFormContactoApellido()">
     </label>
 <p>
     <label for="domicilio">
@@ -80,7 +77,7 @@
 <p>
     <label for="telefono">
         TELEFONO_
-        <input type="telefono" name="telefono" id="telefono" class="camposFormularios">
+        <input type="telefono" name="telefono" id="telefono" class="camposFormularios" >
     </label>
     <label for="email">
         E-MAIL_
@@ -112,7 +109,7 @@
         <label>
             <textarea cols="100" rows="10"></textarea>
         </p>
-        <p><input type="submit" value="Enviar Formulario">
+        <p><input type="submit" id= "botonSubmit" value="Enviar Formulario">
         </label>
     </form>
         </p>

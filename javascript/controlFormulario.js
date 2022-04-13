@@ -2,7 +2,7 @@
 const valores = location.search;
 //Mostramos los valores en consola:
 console.log(valores);
-var campoNombre=true;
+var campoNombre=false;
 var campoApellido=true;
 //Resultado:
 //nombre=algo&telefono-algo&correo=algo%40algo&campo=algo

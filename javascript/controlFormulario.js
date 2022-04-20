@@ -1,4 +1,4 @@
-//console.log("controlFomulario.js funciona");
+console.log("funciona controlFormulario.js");
 const valores = location.search;
 //Mostramos los valores en consola:
 console.log(valores);
@@ -26,13 +26,22 @@ console.log(barrio);
 console.log(codigoPostal);
 console.log(telefono);
 console.log(email);
-console.log(campo);
 
 if (nombre != null && apellido != null && domicilio != null && localidad != null && barrio != null && codigoPostal != null && telefono != null && email != null && campo != null) {
     alert("Los campos han sido completados correctamente, se ejecutara el codigo")
 
 } else {
     alert("Por favor, complete los campos correctamente, Gracias.");
+}
+
+let arrayPAIS_ = ["Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Costa Rica", "El Salvador", "Paraguay", "Peru", "Puerto Rico", "Republica Dominicada", "Mejico", "Venezuela"];
+var modelList = document.getElementById("pais");
+console.log(pais);
+
+
+for (let [index,valor] of arrayPAIS_.entries()){
+    var pais = new Option(valor, index);
+    modelList.options.add(PAIS);
 }
 function validateFormNombre() {
     let nombre = document.getElementById("nombre");

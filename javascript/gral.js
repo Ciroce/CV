@@ -1,17 +1,11 @@
 let resultadoSuma = sumar(1,2);
 let resultadoResta = resta(3,2);
 
-<<<<<<< Updated upstream
-mostrarConsola(resultadoSuma);
-mostrarConsola(resultadoResta);
-
-=======
 mostrarEnConsola(resultadoSuma)
 mostrarEnConsola(resultadoResta)
 function mostrarEnConsola(valor){
     console.log(valor);
 }
->>>>>>> Stashed changes
 function sumar(num1,num2){
     return num1 + num2;
 }
@@ -21,4 +15,10 @@ function resta(num1,num2){
 }
 function mostrarConsola(valor){
     console.log(valor);
+}
+let iterable =[36, 47, 534];
+
+for (let value of iterable) {
+    value = + 32;
+    console.log(value);
 }

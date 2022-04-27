@@ -13,5 +13,12 @@ arrayEstudiosyconocimientos_ = [
 let estudiosLista = document.getElementById("estudios");
 console.log(estudiosLista);
 for (let valor of arrayEstudiosyconocimientos_){
-    estudiosLista.insertAdjacentHTML("afterbegin", '<li>' + valor + '</li>');
+}
+
+
+estudConoc = {
+    ID: 
+    Lugar:
+    Tarea:
+    Epocas:
 }

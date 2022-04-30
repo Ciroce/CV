@@ -34,15 +34,15 @@ if (nombre != null && apellido != null && domicilio != null && localidad != null
     alert("Por favor, complete los campos correctamente, Gracias.");
 }
 
-let arrayPAIS_ = ["Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Costa Rica", "El Salvador", "Paraguay", "Peru", "Puerto Rico", "Republica Dominicada", "Mejico", "Venezuela"];
-var modelList = document.getElementById("pais");
-console.log(pais);
+let arrPAIS = ["Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Costa Rica", "El Salvador", "Paraguay", "Peru", "Puerto Rico", "Republica Dominicada", "Mejico", "Venezuela"];
+var modelList = document.getElementById("Pais");
+console.log(arrPAIS);
 
+//for (let [index,valor] of arrPAIS.entries()){
+//    const arrpais = new Option(valor, index);
+//    modelList.options.add(arrPAIS);
+//}
 
-for (let [index,valor] of arrayPAIS_.entries()){
-    var pais = new Option(valor, index);
-    modelList.options.add(PAIS);
-}
 function validateFormNombre() {
     let nombre = document.getElementById("nombre");
     console.log(nombre);

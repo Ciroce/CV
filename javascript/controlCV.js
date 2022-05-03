@@ -1,5 +1,5 @@
-// console.log("funciona controlCV")
-arrayEstudiosyconocimientos_ = [
+console.log("funciona controlCV.js")
+let arrayEstudiosyconocimientos_ = [
     "Direccion de cine",
     "Guion de cine",
     "Diseñador multimedial",

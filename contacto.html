@@ -41,66 +41,55 @@
         <form action="contacto.html" method="get">
     <label for="nombre">
         NOMBRE_
-        <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo" onblur="validateFormNombre()">
+        <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
     </label>
     <label for="apellido">
         APELLIDO_
-        <input type="apellido" name="apellido" id="apellido" class="camposFormularios campoEnRojo" onlubr="validateFormApellido()">
+        <input type="apellido" name="apellido" id="apellido" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
     </label>
 <p>
     <label for="domicilio">
         DOMICILIO_
-        <input type="domicilio" name="domicilio" id="domicilio" class="camposFormularios campoEnRojo">
+        <input type="domicilio" name="domicilio" id="domicilio" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
     </label>
     <label for="localidad">
         LOCALIDAD_
-        <input type="localidad" name="localidad" id="localidad" class="camposFormularios campoEnRojo">
+        <input type="localidad" name="localidad" id="localidad" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
     </label>
 </p>
 <p>
     <label for="barrio">
         BARRIO_
-        <input type="barrio" name="barrio" id="barrio" class="camposFormularios campoEnRojo">
+        <input type="barrio" name="barrio" id="barrio" class="camposFormularios campoEnRojo"onblur="validarFormulario()">
     </label>
     <label for="codigoPostal">
         C.P._
-        <input type="codigoPostal" name="codigoPostal" id="codigoPostal" class="camposFormularios campoEnRojo">
+        <input type="codigoPostal" name="codigoPostal" id="codigoPostal" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
     </label>
 </p>
 <p>
     <label for="telefono">
         TELEFONO_
-        <input type="telefono" name="telefono" id="telefono" class="camposFormularios" >
+        <input type="telefono" name="telefono" id="telefono" class="camposFormularios" onblur="validarFormulario()">
     </label>
     <label for="email">
         E-MAIL_
-        <input type="email" name="email" id="email" class="camposFormularios campoEnRojo">
+        <input type="email" name="email" id="email" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
     </label>
 </p>
-<p><label>PAIS_<select> 
-    <option value="Argentina">Argentina</option>
-    <option value="Brazil">Brazil</option>
-    <option value="Bolivia">Bolivia</option>
-    <option value="Chile">Chile</option>
-    <option value="Colombia">Colombia</option>
-    <option value="Costa Rica">Costa Rica</option>
-    <option value="El Salvador">El Salvador</option>
-    <option value="Paraguay">Paraguay</option>
-    <option value="Peru">Peru</option>
-    <option value="Puerto Rico">Puerto Rico</option>
-    <option value="Republica Dominicana">Republica Dominicana</option>    
-    <option value="Mejico">Mejico</option>
-    <option value="Venezuela">Venezuela</option>
-    </select>
-    
+<p>
+    <label for="pais">
+        PAIS_
+        <select id="pais">
+
+        </select>    
 </label>
         </p>
         <p>
-            <h2>¿QUE ES LO QUE NECESITAS?_</h2>
-        </p>
-        <p>
-        <label>
-            <textarea cols="100" rows="10"></textarea>
+            <label for="campo">
+                <h2>¿QUE ES LO QUE NECESITAS?_</h2>
+                <textarea name="campo" id="campo" cols="30" rows="10" class="camposFormularios" onblur="validarFormulario()"></textarea>
+            </label>
         </p>
         <p><input type="submit" id= "botonSubmit" value="Enviar Formulario">
         </label>

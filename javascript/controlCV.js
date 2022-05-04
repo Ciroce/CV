@@ -1,24 +1,24 @@
-console.log("funciona controlCV.js")
-let arrayEstudiosyconocimientos_ = [
-    "Direccion de cine",
-    "Guion de cine",
-    "Diseñador multimedial",
-    "Direccion de fotografia",
-    "Redaccion publicitaria",
-    "Escritor compositor",
-    "Musico",
-    "Guitarrista",
-    "Cantante"
-]
+console.log("funciona controlCV.js");
+const arrayMisEstudios =[
+    "Direccion de cine", 
+    "Guion de cine", 
+    "Diseñador multimedial", 
+    "Direccion de fotografia", 
+    "Redaccion publicitaria", 
+    "Escritor compositor", 
+    "Musico", 
+    "Guitarrista", 
+    "Cantante",
+];
 let estudiosLista = document.getElementById("estudios");
 console.log(estudiosLista);
-for (let valor of arrayEstudiosyconocimientos_){
+for(let valor of arrayMisEstudios){
+    estudiosLista.insertAdjacentHTML("afterbegin",'<li>'+ valor.trabajo +" < "+ valor.link +'</li>');
 }
 
-
-estudConoc = {
-    ID: 
-    Lugar:
-    Tarea:
-    Epocas:
-}
+//const arrayMisEstudios = {
+//ID: 
+//Lugar:
+//Tarea:
+//Epocas:
+//}

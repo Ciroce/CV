@@ -16,9 +16,3 @@ function resta(num1,num2){
 function mostrarConsola(valor){
     console.log(valor);
 }
-let iterable =[36, 47, 534];
-
-for (let value of iterable) {
-    value = + 32;
-    console.log(value);
-}

@@ -48,10 +48,49 @@ for(let valor of arrayObjetosMisEstudios){
     elementoNuevo=valor.elementoNuevo();
     estudiosLista.insertAdjacentHTML("afterbegin",elementoNuevo);
 }
+const arrayTrayectoria =[
+    "(2021 - Actualidad) Diseño y edicion de video @ Estudio Dale Dale!",
+    "(2000 - Actualidad) Vocalista @ Running Potatoes", 
+    "(2009 - Actualidad) Vocalista y trompetista @ la FAF", 
+    "(2011 - Actualidad) Vocalista @ Alto Curri", 
+    "(2016 - Actualidad) Guitarrisra y cantante @ XttBN!", 
+    "(2019 - Actualidad) Guitarrista y cantante @ XttML!", 
+    "(2020 - Actualidad)Cantante @ Sorete con choclo", 
+    "(2021 - Actualidad)Programador, compositor, vocalista y guitarrista @ Sincericiro",
+];
+class Item2Lista {
+    constructor(trayectoriaParametro , urlParametro , nombreLinkParametro){
+        this.trayectoria=trayectoriaParametro;
+        this.url=urlParametro;
+        this.nombreLink=nombreLinkParametro;
+    }
+    elemento2Nuevo(){
+        let elemento2Nuevo = "<li>" + this.trayectoria + " <a href='" + this.url +"'>" + this.nombreLink+ "</a> </li>";
+        return elemento2Nuevo;
+    }
+}
+let item2Lista = new Item2Lista(arrayTrayectoria[0], "Diseño y edicion de video", "https://www.facebook.com/EstudioDaleDale/", "Estudio Dale Dale!"); //(let: variable - = : asigna - itemList :crea objeto basado en la CLASE - array : parametros)
+let item2Lista1 = new Item2Lista(arrayTrayectoria[1], "Vocalista", "https://open.spotify.com/artist/51ZG6y4rGKtziqOoKbVodi?si=2UPFIBT7R9Wya0FAPuqpFw", "Running Potatoes"); 
+let item2Lista2 = new Item2Lista(arrayTrayectoria[2], "Vocalista y trompetista", "https://open.spotify.com/artist/7xxVSQHR0fmsrci8GWDdF4?si=VDa8YH22Qz6n49tySUyEIw", "Federacion Afrancesada de fonk");
+let item2Lista3 = new Item2Lista(arrayTrayectoria[3], "Vocalista", "https://www.youtube.com/watch?v=DGXfGBIroII", "Alto Curri");
+let item2Lista4 = new Item2Lista(arrayTrayectoria[4], "Guitarrista y cantante", "https://open.spotify.com/artist/1F4YjsfIuH113cuVgNioRQ?si=_Ro04kfESoeT-zDlfI6ECA", "Portate bien!");
+let item2Lista5 = new Item2Lista(arrayTrayectoria[5], "Guitarrista y cantante", "https://open.spotify.com/artist/0m2FICDUU7bQK2AB79eOON?si=IKObickVSZuXy__y0Q61Gg", "Portate Mal!");
+let item2Lista6 = new Item2Lista(arrayTrayectoria[6], "Cantante", "https://open.spotify.com/artist/6nfZhhxAhYCCwm7TiRAFxC?si=ZIyRjoDpRZu5-nAWES2iaQ", "Sorete con choclo");
+let item2Lista7 = new Item2Lista(arrayTrayectoria[7], "Programador, compositor vocalista y guitarrista", "https://open.spotify.com/artist/680M9gdL8TstXvOJiFdiC8?si=Ii8osk9iTyCm2Ri11qdngQ", "Sincericiro");
+console.log(itemLista);
 
-//const arrayMisEstudios = {
-//ID: 
-//Lugar:
-//Tarea:
-//Epocas:
-//}
+arrayObjetosTrayectoria=[]
+arrayObjetosTrayectoria.push(item2Lista);
+arrayObjetosTrayectoria.push(item2Lista1);
+arrayObjetosTrayectoria.push(item2Lista2);
+arrayObjetosTrayectoria.push(item2Lista3);
+arrayObjetosTrayectoria.push(item2Lista4);
+arrayObjetosTrayectoria.push(item2Lista5);
+arrayObjetosTrayectoria.push(item2Lista6);
+arrayObjetosTrayectoria.push(item2Lista7);
+console.log(arrayObjetosTrayectoria)
+let trayectoriaLista = document.getElementById("trayectoria");
+for(let valor of arrayObjetosTrayectoria){
+    elementoNuevo2=valor.elemento2Nuevo();
+    trayectoriaLista.insertAdjacentHTML("afterbegin",elementoNuevo2);
+}

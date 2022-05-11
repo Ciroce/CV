@@ -44,6 +44,20 @@ for(let [index,valor] of arrayPaises.entries()){
     modelList.options.add(pais);
 }
 
+
+let arrayTarea=["Diseño", "Redaccion", "Composicion", "Edicion"];
+var modelList = document.getElementById("tarea");
+console.log(modelList);
+var i;
+
+for(let [index,valor] of arrayTarea.entries()){
+    var tarea = new Option(valor, index);
+    modelList.options.add(tarea);
+}
+
+//ACA SE VIENE LA COSITA!!
+
+
 function validateFormContacto() {
     let nombre = document.getElementById("nombre"); 
     console.log(nombre);

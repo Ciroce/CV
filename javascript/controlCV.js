@@ -1,5 +1,3 @@
-miFecha = new Date ()
-console.log (mifecha.getDate())
 console.log("funciona controlCV.js");
 const arrayMisEstudios =[
     "Direccion de cine",

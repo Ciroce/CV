@@ -1,4 +1,4 @@
-class controlFormularioObjeto{
+class controlFormularioObj{
     constructor( nombre , apellido , domicilio , localidad , barrio , cp , telefono , email , ){
              this.nombre=nombre;
              this.apellido=apellido;
@@ -21,9 +21,9 @@ function validateFormContacto(variableElementoID) {
         this.validarFormulario(variableElementoID);
     }else{
         //el tamaño de nombre es falso
-        campoNombre=false;
-        document.getElementById("nombre").classList.add("error");
-        validarFormulario();
+        this.campoNombre=false;
+        document.getElementById("variableElementoID").classList.add("error");
+        this.validarFormulario(variableElementoID);
     }
   }
 function validateFormContactoApellido() {

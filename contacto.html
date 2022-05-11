@@ -30,27 +30,29 @@
 <fieldset> 
         <center><p><h1>CONTACTOS_</h1></p> </center>
     </fieldset>
-<center>
-    <fieldset>
-        <a href="index.html">INDEX_</a> -
-        <a href="algo.html">IMAGENES_</a>
-    </fieldset>
+    <center> 
+                     <div class="btn-group">
+                 <a href="index.html" class="btn btn-danger" aria-current="page">INDEX_</a>
+                 <a href="algo.html" class="btn btn-danger">IMAGENES_</a>
+             </div>
+             </center>
 </form>
-<fieldset>
+<center><label id="controlFormularioObj" class="controlFormularioObj"></label></center>
+<fieldset><H1>
     <div class="container">
         <form action="contacto.html" method="get">
     <label for="nombre">
         NOMBRE_
-        <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
+        <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo" onblur="objeto.validateFormContancto('nombre')">
     </label>
     <label for="apellido">
         APELLIDO_
-        <input type="apellido" name="apellido" id="apellido" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
+        <input type="apellido" name="apellido" id="apellido" class="camposFormularios campoEnRojo" onblur="objeto.validateFormContancto('apellido')">
     </label>
 <p>
     <label for="domicilio">
         DOMICILIO_
-        <input type="domicilio" name="domicilio" id="domicilio" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
+        <input type="domicilio" name="domicilio" id="domicilio" class="camposFormularios campoEnRojo" onblur="objeto.validateFormContancto('domicilio')">
     </label>
     <label for="localidad">
         LOCALIDAD_
@@ -60,7 +62,7 @@
 <p>
     <label for="barrio">
         BARRIO_
-        <input type="barrio" name="barrio" id="barrio" class="camposFormularios campoEnRojo"onblur="validarFormulario()">
+        <input type="barrio" name="barrio" id="barrio" class="camposFormularios campoEnRojo" onblur="validarFormulario()">
     </label>
     <label for="codigoPostal">
         C.P._
@@ -106,7 +108,10 @@
     <fieldset>
         <a mailto="mf.baquera@gmail.com"></a><a href="index.html">INDEX_</a> - <a href="algo.html">IMAGENES_</a>
     </fieldset>
+</H1>
 </center>
 </body>
 <script src="./javascript/controlFormulario.js"></script>
+<script src="./javascript/controlFormularioObjeto"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

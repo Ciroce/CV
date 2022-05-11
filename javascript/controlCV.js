@@ -1,3 +1,5 @@
+miFecha = new Date ()
+console.log (mifecha.getDate())
 console.log("funciona controlCV.js");
 const arrayMisEstudios =[
     "Direccion de cine",
@@ -46,7 +48,7 @@ console.log(arrayObjetosMisEstudios)
 let estudiosLista = document.getElementById("estudios");
 for(let valor of arrayObjetosMisEstudios){
     elementoNuevo=valor.elementoNuevo();
-    estudiosLista.insertAdjacentHTML("afterbegin",elementoNuevo);
+    estudiosLista.insertAdjacentHTML("beforeend",elementoNuevo);
 }
 const arrayTrayectoria =[
     "(2021 - Actualidad) Diseño y edicion de video @ Estudio Dale Dale!",
@@ -55,8 +57,8 @@ const arrayTrayectoria =[
     "(2011 - Actualidad) Vocalista @ Alto Curri", 
     "(2016 - Actualidad) Guitarrisra y cantante @ XttBN!", 
     "(2019 - Actualidad) Guitarrista y cantante @ XttML!", 
-    "(2020 - Actualidad)Cantante @ Sorete con choclo", 
-    "(2021 - Actualidad)Programador, compositor, vocalista y guitarrista @ Sincericiro",
+    "(2020 - Actualidad) Cantante @ Sorete con choclo", 
+    "(2021 - Actualidad) Programador, compositor, vocalista y guitarrista @ Sincericiro",
 ];
 class Item2Lista {
     constructor(trayectoriaParametro , urlParametro , nombreLinkParametro){
@@ -92,5 +94,5 @@ console.log(arrayObjetosTrayectoria)
 let trayectoriaLista = document.getElementById("trayectoria");
 for(let valor of arrayObjetosTrayectoria){
     elementoNuevo2=valor.elemento2Nuevo();
-    trayectoriaLista.insertAdjacentHTML("afterbegin",elementoNuevo2);
+    trayectoriaLista.insertAdjacentHTML("beforeend",elementoNuevo2);
 }

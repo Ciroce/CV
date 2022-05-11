@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+h1 {
+    font-size: 15px;
+}
+
 /* a{
     color: red;
     font-size: 16px;
@@ -19,7 +24,7 @@
 } */
 
     input, textarea{
-        width: 22%; 
+        width: 15%; 
         padding: 1px; 
         border: 1px solid rgb(224, 84, 9); 
         border-radius: 4px; 

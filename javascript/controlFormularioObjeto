@@ -1,73 +1,24 @@
-console.log("funciona controlFormulario.js");
-const valores = location.search;
-//Mostramos los valores en consola:
-console.log(valores);
-var campoNombre=false;
-var campoApellido=true;
-//Resultado:
-//nombre=algo&telefono-algo&correo=algo%40algo&campo=algo
-//Creamos la instancia
-const urlParams = new URLSearchParams(valores);
-//Accedemos a los valores
-var nombre = urlParams.get('nombre');
-var apellido = urlParams.get('apellido');
-var domicilio = urlParams.get('domicilio');
-var localidad = urlParams.get('localidad');
-var barrio = urlParams.get('barrio');
-var codigoPostal = urlParams.get('codigoPostal');
-var telefono = urlParams.get('telefono');
-var email = urlParams.get('email');
-var campo =urlParams.get('campo');
-console.log(nombre);
-console.log(apellido);
-console.log(domicilio);
-console.log(localidad);
-console.log(barrio);
-console.log(codigoPostal);
-console.log(telefono);
-console.log(email);
-
-if (nombre != null && apellido != null && domicilio != null && localidad != null && barrio != null && codigoPostal != null && telefono != null && email != null && campo != null) {
-    alert("Los campos han sido completados correctamente, se ejecutara el codigo")
-
-} else {
-    alert("Por favor, complete los campos correctamente, Gracias.");
+class controlFormularioObjeto{
+    constructor( nombre , apellido , domicilio , localidad , barrio , cp , telefono , email , ){
+             this.nombre=nombre;
+             this.apellido=apellido;
+             this.domicilio=domicilio;
+             this.localidad=localidad;
+             this.barrio=barrio;
+             this.codigoPostal=codigoPostal;
+             this.telefono=telefono;
+             this.email=email;
+    }    elementoNuevo(){
+        let elementoNuevo = "<li>" + this.nombre + "<li>" + this.apellido + "<li>" + this.domicilio + "<li>" + this.localidad + "<li>" + this.barrio + "<li>" + this.codigoPostal + "<li>" + this.telefono + "<li>" + this.email + "<li>" + this.nombreLink+ "</a> </li>";
+        return elementoNuevo;
+    }
 }
-
-let arrayPaises=["Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Costa Rica", "El Salvador", "Paraguay", "Peru", "Puerto Rico", "Republica Dominicada", "Mejico", "Venezuela"];
-var modelList = document.getElementById("pais");
-console.log(modelList);
-var i;
-
-for(let [index,valor] of arrayPaises.entries()){
-    var pais = new Option(valor, index);
-    modelList.options.add(pais);
-}
-
-
-let arrayTarea=["Diseño", "Redaccion", "Composicion", "Edicion"];
-var modelList = document.getElementById("tarea");
-console.log(modelList);
-var i;
-
-for(let [index,valor] of arrayTarea.entries()){
-    var tarea = new Option(valor, index);
-    modelList.options.add(tarea);
-}
-
-//ACA SE VIENE LA COSITA!!
-let arrayDiseño=["Grafico", "Imagen", "Marcas", "Multimedial"]
-
-
-function validateFormContacto() {
-    let nombre = document.getElementById("nombre"); 
-    console.log(nombre);
-    console.log(nombre.value.length);
+function validateFormContacto(variableElementoID) {
+    let nombre = document.getElementById("variableElementoID"); 
     if (nombre.value.length > 2) {
-        //el tamaño de nombre es correcto
         campoNombre=true;
-        document.getElementById("nombre").classList.remove("error");
-        validarFormulario();
+        document.getElementById("variableElementoID").classList.remove("error");
+        this.validarFormulario(variableElementoID);
     }else{
         //el tamaño de nombre es falso
         campoNombre=false;
@@ -166,3 +117,20 @@ function validarFormulario() {
         document.getElementById("botonSubmit").setAttribute("disables", "disabled");
     }
 }
+const valores = location.search;
+
+console.log(valores);
+var campoNombre=false;
+var campoApellido=true;
+
+const urlParams = new URLSearchParams(valores);
+
+var nombre = urlParams.get('nombre');
+var apellido = urlParams.get('apellido');
+var domicilio = urlParams.get('domicilio');
+var localidad = urlParams.get('localidad');
+var barrio = urlParams.get('barrio');
+var codigoPostal = urlParams.get('codigoPostal');
+var telefono = urlParams.get('telefono');
+var email = urlParams.get('email');
+var campo =urlParams.get('campo');

@@ -1,5 +1,5 @@
-class controlFormularioObj{
-    constructor( nombre , apellido , domicilio , localidad , barrio , cp , telefono , email , ){
+class controlFormulario{
+    constructor( nombre, apellido, domicilio, localidad, barrio, codigoPostal, telefono, email ){
              this.nombre=nombre;
              this.apellido=apellido;
              this.domicilio=domicilio;
@@ -134,3 +134,6 @@ var codigoPostal = urlParams.get('codigoPostal');
 var telefono = urlParams.get('telefono');
 var email = urlParams.get('email');
 var campo =urlParams.get('campo');
+if (nombre != null && apellido != null && domicilio != null && localidad != null && barrio != null && codigoPostal != null && telefono != null && email != null && campo == null) {
+    objeto = new ControlFormulario(nombre, apellido, domicilio, localidad, barrio, codigoPostal, telefono, email );
+}

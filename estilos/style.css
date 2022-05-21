@@ -1,25 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 *{
     margin: 5;
     padding: 0;
 }
-/* a{
+a{
     color: red;
     font-size: 16px;
-}
+} */
 .camposFormularios{
     width: 100%;
     height: 20px;
 }
 .campoEnRojo{
-    border: 2px solid red;
+    border: 2px solid rgb(145, 180, 179);
     border-radius: 4px;
 }
 #nombre{
     height: 24px;
-} */
+}
 
     input, textarea{
-        width: 15%; 
+        width: 65%; 
         padding: 1px; 
         border: 1px solid rgb(224, 84, 9); 
         border-radius: 4px; 
@@ -47,8 +48,8 @@
     }
 
     .container {
-        border-radius: 20px;
-        background-color: #f2f2f2;
+        border-radius: 30px;
+        background-color: transparent;
         padding: 20px;
         margin:1% 3% 1% 3% ;
     }
@@ -71,10 +72,25 @@
         background-color: #04AA6D;
     }
     #bannerimage {
-        width: 80%;
+        width: 100%;
         background-image: url(../imagenes/FOTO1.jpg);
-        height: 150px;
+        height: 200px;
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
       }
+    
+    .LINKS {
+        width: 80px;
+        height: 160px;
+          border-radius: 5px;
+          background-color: transparent;
+          padding: 5px;
+          margin:1% 3% 1% 3% ;
+          background-color: transparent;
+          background-position: right;
+          background-repeat: no-repeat;
+      }
+.card-body {
+    background-color: transparent;
+}

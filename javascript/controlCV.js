@@ -49,14 +49,14 @@ for(let valor of arrayObjetosMisEstudios){
     estudiosLista.insertAdjacentHTML("beforeend",elementoNuevo);
 }
 const arrayTrayectoria =[
-    "(2021 - Actualidad) Diseño y edicion de video @ Estudio Dale Dale!",
-    "(2000 - Actualidad) Vocalista @ Running Potatoes", 
-    "(2009 - Actualidad) Vocalista y trompetista @ la FAF", 
-    "(2011 - Actualidad) Vocalista @ Alto Curri", 
-    "(2016 - Actualidad) Guitarrisra y cantante @ XttBN!", 
-    "(2019 - Actualidad) Guitarrista y cantante @ XttML!", 
-    "(2020 - Actualidad) Cantante @ Sorete con choclo", 
-    "(2021 - Actualidad) Programador, compositor, vocalista y guitarrista @ Sincericiro",
+    "(2021 - Actualidad) Diseño y edicion de video <b>@ Estudio Dale Dale!</b>",
+    "(2000 - Actualidad) Vocalista <b>@ Running Potatoes</b>", 
+    "(2009 - Actualidad) Vocalista y trompetista <b>@ la FAF</b>", 
+    "(2011 - Actualidad) Vocalista <b>@ Alto Curri</b>", 
+    "(2016 - Actualidad) Guitarrisra y cantante <b>@ XttBN!- Portate Bien!</b>", 
+    "(2019 - Actualidad) Guitarrista y cantante <b>@ XttML! - Portate Mal!</b>", 
+    "(2020 - Actualidad) Cantante <b>@ Sorete con choclo</b>", 
+    "(2021 - Actualidad) Programador, compositor, vocalista y guitarrista <b>@ Sincericiro</b>",
 ];
 class Item2Lista {
     constructor(trayectoriaParametro , urlParametro , nombreLinkParametro){

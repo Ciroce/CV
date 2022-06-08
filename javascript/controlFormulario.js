@@ -1,4 +1,4 @@
-console.log("funciona controlFormulario.js");
+console.log("funciona controlFormulario vieja");
 const valores = location.search;
 //Mostramos los valores en consola:
 console.log(valores);

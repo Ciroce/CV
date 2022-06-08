@@ -21,15 +21,15 @@ class ItemLista {
         return elementoNuevo;
     }
 }
-let itemLista = new ItemLista(arrayMisEstudios[0], "Direccion de cine", "-", "Diseñador multimedial - UP"); //(let: variable - = : asigna - itemList :crea objeto basado en la CLASE - array : parametros)
-let itemLista1 = new ItemLista(arrayMisEstudios[1], "Guion de cine", "-", "Diseñador multimedial - UP"); 
-let itemLista2 = new ItemLista(arrayMisEstudios[2], "Diseñador multimedial", "-", "Diseñador multimedial - UP");
-let itemLista3 = new ItemLista(arrayMisEstudios[3], "Direccion de fotografia", "-", "Diseñador multimedial - UP");
-let itemLista4 = new ItemLista(arrayMisEstudios[4], "Redaccion publicitaria", "-", "BROTHER AD");
-let itemLista5 = new ItemLista(arrayMisEstudios[5], "Escritor compositor", "-", "Lavie'");
-let itemLista6 = new ItemLista(arrayMisEstudios[6], "Musico", "-", "Lavie'");
-let itemLista7 = new ItemLista(arrayMisEstudios[7], "Guitarrista", "-", "Lavie'");
-let itemLista8 = new ItemLista(arrayMisEstudios[8], "Cantante", "-", "Lavie'");
+let itemLista = new ItemLista(arrayMisEstudios[0], "Direccion de cine", "", ""); //(let: variable - = : asigna - itemList :crea objeto basado en la CLASE - array : parametros)
+let itemLista1 = new ItemLista(arrayMisEstudios[1], "Guion de cine", "", ""); 
+let itemLista2 = new ItemLista(arrayMisEstudios[2], "Diseñador multimedial", "", "");
+let itemLista3 = new ItemLista(arrayMisEstudios[3], "Direccion de fotografia", "", "");
+let itemLista4 = new ItemLista(arrayMisEstudios[4], "Redaccion publicitaria", "", "");
+let itemLista5 = new ItemLista(arrayMisEstudios[5], "Escritor compositor", "", "'");
+let itemLista6 = new ItemLista(arrayMisEstudios[6], "Musico", "", "");
+let itemLista7 = new ItemLista(arrayMisEstudios[7], "Guitarrista", "", "'");
+let itemLista8 = new ItemLista(arrayMisEstudios[8], "Cantante", "", "'");
 console.log(itemLista);
 
 arrayObjetosMisEstudios=[]
@@ -94,3 +94,18 @@ for(let valor of arrayObjetosTrayectoria){
     elementoNuevo2=valor.elemento2Nuevo();
     trayectoriaLista.insertAdjacentHTML("beforeend",elementoNuevo2);
 }
+// fetch("https://api.github.com/users/Ciroce/repos")
+// .then(function(respose){
+//     respose.json()
+// })
+// .then(function(json){
+//     console.log(json)
+//     for(const repo of json)
+//     let elementoRepoNuevo = document.getElementById("repo");
+//     elementoRepoNuevo(repoName,svn_url,null,updated_at)
+//     elementoRepoNuevo=valor.elementoRepo2();
+//     repoLista.insertAdjacentHTML("beforeend",elementoRepo2);
+// })
+// .catch(function(){
+//     console.log("no funciona")
+// })

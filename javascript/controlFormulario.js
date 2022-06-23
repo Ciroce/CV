@@ -2,8 +2,8 @@ console.log("funciona controlFormulario vieja");
 const valores = location.search;
 //Mostramos los valores en consola:
 console.log(valores);
-var campoNombre=false;
-var campoApellido=true;
+var campoNombre = false;
+var campoApellido = true;
 //Resultado:
 //nombre=algo&telefono-algo&correo=algo%40algo&campo=algo
 //Creamos la instancia
@@ -17,7 +17,7 @@ var barrio = urlParams.get('barrio');
 var codigoPostal = urlParams.get('codigoPostal');
 var telefono = urlParams.get('telefono');
 var email = urlParams.get('email');
-var campo =urlParams.get('campo');
+var campo = urlParams.get('campo');
 console.log(nombre);
 console.log(apellido);
 console.log(domicilio);
@@ -34,135 +34,135 @@ if (nombre != null && apellido != null && domicilio != null && localidad != null
     alert("Por favor, complete los campos correctamente, Gracias.");
 }
 
-let arrayPaises=["Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Costa Rica", "El Salvador", "Paraguay", "Peru", "Puerto Rico", "Republica Dominicada", "Mejico", "Venezuela"];
+let arrayPaises = ["Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Costa Rica", "El Salvador", "Paraguay", "Peru", "Puerto Rico", "Republica Dominicada", "Mejico", "Venezuela"];
 var modelList = document.getElementById("pais");
 console.log(modelList);
 var i;
 
-for(let [index,valor] of arrayPaises.entries()){
+for (let [index, valor] of arrayPaises.entries()) {
     var pais = new Option(valor, index);
     modelList.options.add(pais);
 }
 
 
-let arrayTarea=["Diseño", "Redaccion", "Composicion", "Edicion"];
+let arrayTarea = ["Diseño", "Redaccion", "Composicion", "Edicion"];
 var modelList = document.getElementById("tarea");
 console.log(modelList);
 var i;
 
-for(let [index,valor] of arrayTarea.entries()){
+for (let [index, valor] of arrayTarea.entries()) {
     var tarea = new Option(valor, index);
     modelList.options.add(tarea);
 }
 
 //ACA SE VIENE LA COSITA!!
-let arrayDiseño=["Grafico", "Imagen", "Marcas", "Multimedial"]
+let arrayDiseño = ["Grafico", "Imagen", "Marcas", "Multimedial"]
 
 
 function validateFormContacto() {
-    let nombre = document.getElementById("nombre"); 
+    let nombre = document.getElementById("nombre");
     console.log(nombre);
     console.log(nombre.value.length);
     if (nombre.value.length > 2) {
         //el tamaño de nombre es correcto
-        campoNombre=true;
+        campoNombre = true;
         document.getElementById("nombre").classList.remove("error");
         validarFormulario();
-    }else{
+    } else {
         //el tamaño de nombre es falso
-        campoNombre=false;
+        campoNombre = false;
         document.getElementById("nombre").classList.add("error");
         validarFormulario();
     }
-  }
+}
 function validateFormContactoApellido() {
-    let nombre = document.getElementById("apellido"); 
+    let nombre = document.getElementById("apellido");
     if (nombre.value.length > 2) {
-        campoApellido=true;
+        campoApellido = true;
         document.getElementById("apellido").classList.remove("error");
         validarFormulario();
-    }else{
-        campoApellido=false;
+    } else {
+        campoApellido = false;
         document.getElementById("apellido").classList.add("error");
         validarFormulario();
     }
-  }
+}
 function validateFormContactoDomicilio() {
-    let nombre = document.getElementById("domicilio"); 
+    let nombre = document.getElementById("domicilio");
     if (nombre.value.length > 2) {
-        campoDomicilio=true;
+        campoDomicilio = true;
         document.getElementById("domicilio").classList.remove("error");
         validarFormulario();
-    }else{
-        campoDomicilio=false;
+    } else {
+        campoDomicilio = false;
         document.getElementById("domicilio").classList.add("error");
         validarFormulario();
     }
-  }
+}
 function validateFormContactoLocalidad() {
-    let nombre = document.getElementById("localidad"); 
+    let nombre = document.getElementById("localidad");
     if (nombre.value.length > 2) {
-        campoLocalidad=true;
+        campoLocalidad = true;
         document.getElementById("localidad").classList.remove("error");
         validarFormulario();
-    }else{
-        campoLocalidad=false;
+    } else {
+        campoLocalidad = false;
         document.getElementById("localidad").classList.add("error");
         validarFormulario();
     }
-  }
+}
 function validateFormContactoBarrio() {
-    let nombre = document.getElementById("barrio"); 
+    let nombre = document.getElementById("barrio");
     if (nombre.value.length > 2) {
-        campoBarrio=true;
+        campoBarrio = true;
         document.getElementById("barrio").classList.remove("error");
         validarFormulario();
-    }else{
-        campoBarrio=false;
+    } else {
+        campoBarrio = false;
         document.getElementById("barrio").classList.add("error");
         validarFormulario();
     }
-  }
+}
 function validateFormContactoCodigoPostal() {
-    let nombre = document.getElementById("codigoPostal"); 
+    let nombre = document.getElementById("codigoPostal");
     if (nombre.value.length > 2) {
-        campoCodigoPostal=true;
+        campoCodigoPostal = true;
         document.getElementById("codigoPostal").classList.remove("error");
         validarFormulario();
-    }else{
-        campoCodigoPostal=false;
+    } else {
+        campoCodigoPostal = false;
         document.getElementById("codigoPostal").classList.add("error");
         validarFormulario();
     }
-  }
+}
 function validateFormContactoTelefono() {
-    let nombre = document.getElementById("telefono"); 
+    let nombre = document.getElementById("telefono");
     if (nombre.value.length > 2) {
-        campoTelefono=true;
+        campoTelefono = true;
         document.getElementById("telefono").classList.remove("error");
         validarFormulario();
-    }else{
-        campoTelefono=false;
+    } else {
+        campoTelefono = false;
         document.getElementById("telefono").classList.add("error");
         validarFormulario();
     }
-  }
+}
 function validateFormContactoEmail() {
-    let nombre = document.getElementById("email"); 
+    let nombre = document.getElementById("email");
     if (nombre.value.length > 2) {
-        campoEmail=true;
+        campoEmail = true;
         document.getElementById("email").classList.remove("error");
         validarFormulario();
-    }else{
-        campoEmail=false;
+    } else {
+        campoEmail = false;
         document.getElementById("email").classList.add("error");
         validarFormulario();
     }
-  }
+}
 function validarFormulario() {
-    if (campoNombre && campoApellido && campoDomicilio && campoLocalidad && campoBarrio && codigoPostal && campoTelefono && campoEmail){
+    if (campoNombre && campoApellido && campoDomicilio && campoLocalidad && campoBarrio && codigoPostal && campoTelefono && campoEmail) {
         document.getElementById("botonSubmit").removeAttribute("disabled");
-    }else{
+    } else {
         document.getElementById("botonSubmit").setAttribute("disables", "disabled");
     }
 }

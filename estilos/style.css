@@ -74,10 +74,11 @@ a{
     #bannerimage {
         width: 100%;
         background-image: url(../imagenes/FOTO1.jpg);
-        height: 200px;
+        height: 210px;
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
+        size: auto;
       }
     
     .LINKS {
@@ -93,4 +94,13 @@ a{
       }
 .card-body {
     background-color: transparent;
+}
+.zoom {
+    height: 400px;
+    width: 400px;
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.3); 
 }

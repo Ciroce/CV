@@ -5,10 +5,9 @@ const arrayMisEstudios = [
     "Diseñador multimedial",
     "Direccion de fotografia",
     "Redaccion publicitaria",
-    "Escritor compositor",
-    "Musico",
-    "Guitarrista",
-    "Cantante",
+    "Escritor, compositor",
+    "Musico, Guitarrista, Cantante",
+    "Programador web javascript"
 ];
 class ItemLista {
     constructor(estudioParametro, urlParametro, nombreLinkParametro) {
@@ -21,15 +20,14 @@ class ItemLista {
         return elementoNuevo;
     }
 }
-let itemLista = new ItemLista(arrayMisEstudios[0], "Direccion de cine", "", ""); //(let: variable - = : asigna - itemList :crea objeto basado en la CLASE - array : parametros)
-let itemLista1 = new ItemLista(arrayMisEstudios[1], "Guion de cine", "", "");
-let itemLista2 = new ItemLista(arrayMisEstudios[2], "Diseñador multimedial", "", "");
-let itemLista3 = new ItemLista(arrayMisEstudios[3], "Direccion de fotografia", "", "");
-let itemLista4 = new ItemLista(arrayMisEstudios[4], "Redaccion publicitaria", "", "");
-let itemLista5 = new ItemLista(arrayMisEstudios[5], "Escritor compositor", "", "'");
-let itemLista6 = new ItemLista(arrayMisEstudios[6], "Musico", "", "");
-let itemLista7 = new ItemLista(arrayMisEstudios[7], "Guitarrista", "", "'");
-let itemLista8 = new ItemLista(arrayMisEstudios[8], "Cantante", "", "'");
+let itemLista = new ItemLista(arrayMisEstudios[0], "Direccion de cine", "", "Universidad de Palermo"); //(let: variable - = : asigna - itemList :crea objeto basado en la CLASE - array : parametros)
+let itemLista1 = new ItemLista(arrayMisEstudios[1], "Guion de cine", "", "Universidad de Palermo");
+let itemLista2 = new ItemLista(arrayMisEstudios[2], "Diseñador multimedial", "", "Universidad de Palermo");
+let itemLista3 = new ItemLista(arrayMisEstudios[3], "Direccion de fotografia", "", "Universidad de Palermo");
+let itemLista4 = new ItemLista(arrayMisEstudios[4], "Redaccion publicitaria", "", "Brothers AD");
+let itemLista5 = new ItemLista(arrayMisEstudios[5], "Escritor compositor", "", "");
+let itemLista6 = new ItemLista(arrayMisEstudios[6], "Musico, Guitarrista, Cantante", "", "");
+let itemLista7 = new ItemLista(arrayMisEstudios[7], "Programador web Javascript", "", "CFP 408 - Moron");
 console.log(itemLista);
 
 arrayObjetosMisEstudios = []
@@ -41,7 +39,6 @@ arrayObjetosMisEstudios.push(itemLista4);
 arrayObjetosMisEstudios.push(itemLista5);
 arrayObjetosMisEstudios.push(itemLista6);
 arrayObjetosMisEstudios.push(itemLista7);
-arrayObjetosMisEstudios.push(itemLista8);
 console.log(arrayObjetosMisEstudios)
 let estudiosLista = document.getElementById("estudios");
 for (let valor of arrayObjetosMisEstudios) {

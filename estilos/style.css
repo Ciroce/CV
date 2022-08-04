@@ -72,13 +72,16 @@ a{
         background-color: #04AA6D;
     }
     #bannerimage {
-        width: 100%;
         background-image: url(../imagenes/FOTO1.jpg);
+        width: 280px;
         height: 210px;
+        border-radius:150px;
+        border:10px solid rgb(218, 143, 4);
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
         size: auto;
+        
       }
     
     .LINKS {

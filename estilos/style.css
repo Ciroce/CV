@@ -73,10 +73,10 @@ a{
     }
     #bannerimage {
         background-image: url(../imagenes/FOTO1.jpg);
-        width: 280px;
+        width: 160px;
         height: 210px;
-        border-radius:150px;
-        border:10px solid rgb(218, 143, 4);
+        border-radius:50px;
+        border:10px solid rgba(206, 124, 0, 0.74);
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;

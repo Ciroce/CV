@@ -7,7 +7,9 @@ const arrayMisEstudios = [
     "Redaccion publicitaria",
     "Escritor, compositor",
     "Musico, Guitarrista, Cantante",
-    "Programador web javascript"
+    "Programador javascript",
+    "Diseñador Grafico",
+    "Diseñador web",
 ];
 class ItemLista {
     constructor(estudioParametro, urlParametro, nombreLinkParametro) {

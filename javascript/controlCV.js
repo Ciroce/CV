@@ -52,7 +52,7 @@ for (let valor of arrayObjetosMisEstudios) {
     estudiosLista.insertAdjacentHTML("beforeend", elementoNuevo);
 }
 const arrayTrayectoria = [
-    "(2021 - Actualidad) Diseño y edicion de video <b>@ Estudio Dale Dale!</b>",
+    "(2021 - Actualidad) Diseño, edicion de video, programacios, diseño web, grabacion <b>@ Estudio Dale Dale!</b>",
     "(2000 - Actualidad) Vocalista <b>@ Running Potatoes</b>",
     "(2009 - Actualidad) Vocalista y trompetista <b>@ la FAF</b>",
     "(2011 - Actualidad) Vocalista <b>@ Alto Curri</b>",

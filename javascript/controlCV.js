@@ -72,7 +72,7 @@ class Item2Lista {
         return elemento2Nuevo;
     }
 }
-let item2Lista = new Item2Lista(arrayTrayectoria[0], "Diseño y edicion de video", "https://www.facebook.com/EstudioDaleDale/", "Estudio Dale Dale!"); //(let: variable - = : asigna - itemList :crea objeto basado en la CLASE - array : parametros)
+let item2Lista = new Item2Lista(arrayTrayectoria[0], "Diseño, edicion de video, programacios, diseño web, grabacion", "https://www.facebook.com/EstudioDaleDale/", "Estudio Dale Dale!"); //(let: variable - = : asigna - itemList :crea objeto basado en la CLASE - array : parametros)
 let item2Lista1 = new Item2Lista(arrayTrayectoria[1], "Vocalista", "https://open.spotify.com/artist/51ZG6y4rGKtziqOoKbVodi?si=2UPFIBT7R9Wya0FAPuqpFw", "Running Potatoes");
 let item2Lista2 = new Item2Lista(arrayTrayectoria[2], "Vocalista y trompetista", "https://open.spotify.com/artist/7xxVSQHR0fmsrci8GWDdF4?si=VDa8YH22Qz6n49tySUyEIw", "Federacion Afrancesada de fonk");
 let item2Lista3 = new Item2Lista(arrayTrayectoria[3], "Vocalista", "https://www.youtube.com/watch?v=DGXfGBIroII", "Alto Curri");

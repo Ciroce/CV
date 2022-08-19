@@ -8,8 +8,8 @@ const arrayMisEstudios = [
     "Escritor, compositor",
     "Musico, Guitarrista, Cantante",
     "Programador javascript",
+    "Diseñador de paginas Web",
     "Diseñador Grafico",
-    "Diseñador web",
 ];
 class ItemLista {
     constructor(estudioParametro, urlParametro, nombreLinkParametro) {
@@ -29,7 +29,9 @@ let itemLista3 = new ItemLista(arrayMisEstudios[3], "Direccion de fotografia", "
 let itemLista4 = new ItemLista(arrayMisEstudios[4], "Redaccion publicitaria", "", "Brothers AD");
 let itemLista5 = new ItemLista(arrayMisEstudios[5], "Escritor compositor", "", "");
 let itemLista6 = new ItemLista(arrayMisEstudios[6], "Musico, Guitarrista, Cantante", "", "");
-let itemLista7 = new ItemLista(arrayMisEstudios[7], "Programador web Javascript", "", "CFP 408 - Moron");
+let itemLista7 = new ItemLista(arrayMisEstudios[7], "Programador Javascript", "", "CFP 408 - Moron");
+let itemLista8 = new ItemLista(arrayMisEstudios[8], "Diseñador de pagina web", "", "Universidad de Palermo");
+let itemLista9 = new ItemLista(arrayMisEstudios[9], "Diseñador Grafico", "", "Universidad de palermo");
 console.log(itemLista);
 
 arrayObjetosMisEstudios = []
@@ -41,6 +43,8 @@ arrayObjetosMisEstudios.push(itemLista4);
 arrayObjetosMisEstudios.push(itemLista5);
 arrayObjetosMisEstudios.push(itemLista6);
 arrayObjetosMisEstudios.push(itemLista7);
+arrayObjetosMisEstudios.push(itemLista8);
+arrayObjetosMisEstudios.push(itemLista9);
 console.log(arrayObjetosMisEstudios)
 let estudiosLista = document.getElementById("estudios");
 for (let valor of arrayObjetosMisEstudios) {

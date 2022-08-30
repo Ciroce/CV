@@ -69,18 +69,18 @@
                 <center>
                     <fieldset>
                         <div class="container">
-                            <form action="correo.php" name="Contacto" method="post">
+                            <form action="https://formsubmit.co/mf.baquera@gmail.com" name="Contacto" method="post">
                                 <p><label for="nombre">
                                         NOMBRE_
                                         <input type="text" name="nombre" id="nombre"
                                             class="camposFormularios campoEnRojo"
-                                            onblur="objeto.validateFormContancto('nombre')">
+                                            onblur="objeto.validateFormContancto('nombre')" placeholder="Nombre">
                                     </label>
                                     <label for="apellido">
                                         APELLIDO_
                                         <input type="apellido" name="apellido" id="apellido"
                                             class="camposFormularios campoEnRojo"
-                                            onblur="objeto.validateFormContactoApellido('apellido')">
+                                            onblur="objeto.validateFormContactoApellido('apellido')" placeholder="Apellido">
                                     </label>
                                 </p>
                                 <p>
@@ -88,26 +88,26 @@
                                         DOMICILIO_
                                         <input type="domicilio" name="domicilio" id="domicilio"
                                             class="camposFormularios campoEnRojo"
-                                            onblur="objeto.validateFormContactoDomicilio('domicilio')">
+                                            onblur="objeto.validateFormContactoDomicilio('domicilio')" placeholder="Domicilio">
                                     </label>
                                     <label for="localidad">
                                         LOCALIDAD_
                                         <input type="localidad" name="localidad" id="localidad"
                                             class="camposFormularios campoEnRojo"
-                                            onblur="validateFormContactoLocalidad()">
+                                            onblur="validateFormContactoLocalidad()" placeholder="localidad">
                                     </label>
                                 </p>
                                 <p>
                                     <label for="barrio">
                                         BARRIO_
                                         <input type="barrio" name="barrio" id="barrio"
-                                            class="camposFormularios campoEnRojo" onblur="validateFormContactoBarrio()">
+                                            class="camposFormularios campoEnRojo" onblur="validateFormContactoBarrio()" placeholder="Barrio">
                                     </label>
                                     <label for="codigoPostal">
                                         C.P._
                                         <input type="codigoPostal" name="codigoPostal" id="codigoPostal"
                                             class="camposFormularios campoEnRojo"
-                                            onblur="validateFormContactoCodigoPostal()">
+                                            onblur="validateFormContactoCodigoPostal()" placeholder="codigoPostak">
                                     </label>
                                 </p>
                                 <p>
@@ -115,12 +115,12 @@
                                         TELEFONO_
                                         <input type="telefono" name="telefono" id="telefono"
                                             class="camposFormularios campoEnRojo"
-                                            onblur="validateFormContactoTelefono()">
+                                            onblur="validateFormContactoTelefono()" placeholder="Telefono">
                                     </label>
                                     <label for="email">
                                         E-MAIL_
                                         <input type="email" name="email" id="email"
-                                            class="camposFormularios campoEnRojo" onblur="validateFormContactoEmail()">
+                                            class="camposFormularios campoEnRojo" onblur="validateFormContactoEmail()" placeholder="Email">
                                     </label>
                                 </p>
                                 <p>
@@ -143,7 +143,7 @@
                                         onblur="validarFormulario()"></textarea>
                                 </label>
                                 </p>
-                                <p><input type="submit" value="Enviar Formulario" id="botonSubmit"class="btn-xs">
+                                <p><input type="submit" value="Enviar Formulario" id="botonSubmit"class="btn-xs" onclick="mail()">
                                     </label>
                             </form>
                             </p>
